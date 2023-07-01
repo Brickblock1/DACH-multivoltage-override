@@ -1,0 +1,4 @@
+##grflangid 01
+NAME :DACH Train Set Multivoltage Override
+DESC :Makes trains from DACH train Set use the correct multivoltage tracktypes. {COPYRIGHT}2023 Brickblock1{}licence: GPLv2
+URL :https://github.com/Brickblock1/DACH-multivoltage-override

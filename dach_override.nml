@@ -1,0 +1,115 @@
+grf {
+	grfid:"BBDF";
+	name: string(NAME);
+	desc: string(DESC);
+	min_compatible_version: 1;
+	version: 1;
+	url: string(URL);
+}
+
+railtypetable{
+	_15KV: [SAAa, SAAA, SAAE, ELRL], 
+	_X5KV: [NORD, SAAA, SAAE, ELRL], 
+}
+
+engine_override("DL\11\05");
+
+if (grf_order_behind("DL\11\05") == 0) {
+	error(FATAL, MUST_LOAD_AFTER, "DACH Train Set");
+}
+
+item(FEAT_TRAINS, DB_BR_143, 40) {
+	property {
+		track_type: _15KV;
+	}
+}
+
+item(FEAT_TRAINS, DB_BR_1462, 41) {
+	property {
+		track_type: _15KV;
+	}
+}
+
+item(FEAT_TRAINS, DB_BR_101, 42) {
+	property {
+		track_type: _15KV;
+	}
+}
+
+item(FEAT_TRAINS, SBB_Re_460, 43) {
+	property {
+		track_type: _15KV;
+	}
+}
+
+item(FEAT_TRAINS, OEBB_1116, 44) {
+	property {
+		track_type: _15KV;
+	}
+}
+
+item(FEAT_TRAINS, TRAXX, 45) {
+	property {
+		track_type: _15KV;
+	}
+}
+
+item(FEAT_TRAINS, OEBB_1144, 46) {
+	property {
+		track_type: _15KV;
+	}
+}
+
+item(FEAT_TRAINS, OEBB_1142, 47) {
+	property {
+		track_type: _15KV;
+	}
+}
+
+item(FEAT_TRAINS, OEBB_11162, 48) {
+	property {
+		track_type: _15KV;
+	}
+}
+
+item(FEAT_TRAINS, SBB_Re_450, 100) {
+	property {
+		track_type: _15KV;
+	}
+}
+
+item(FEAT_TRAINS, GTW, 101) {
+	property {
+		track_type: _15KV;
+	}
+}
+
+item(FEAT_TRAINS, FLIRT, 102) {
+	property {
+		track_type: _15KV;
+	}
+}
+
+item(FEAT_TRAINS, KISS, 103) {
+	property {
+		track_type: _15KV;
+	}
+}
+
+item(FEAT_TRAINS, SBB_RABDe_500, 104) {
+	property {
+		track_type: _15KV;
+	}
+}
+
+item(FEAT_TRAINS, OEBB_4024, 105) {
+	property {
+		track_type: _15KV;
+	}
+}
+
+item(FEAT_TRAINS, BLS_RABe_535, 106) {
+	property {
+		track_type: _15KV;
+	}
+}
